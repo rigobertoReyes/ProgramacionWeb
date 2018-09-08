@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<table class="table .table-strip">
+		<thead>
+			<th>  Player  </th>
+			<th>  Number  </th>
+			<th>  Position  </th>
+			<th>  Weight  </th>
+			<th>  Age  </th>
+			
+			<th>Actions</th>
+			
+			{% for t in object_list %}
+				<tr>
+					<td>{{ t.name }}</td>
+					<td>{{ t.number }}</td>
+					<td>{{ t.position }}</td>
+					<td>{{ t.weight }}</td>
+					<td>{{ t.age }}</td>
+					<td> <a href="#" class="btn btn-primary">Detail</a> </td>
+				</tr>
+			{% endfor %}
+			
+		</thead>
+	</table>
+{% endblock %}

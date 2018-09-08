@@ -1,0 +1,18 @@
+II. Instrucciones: Leer detalladamente la problemática y desarrollar un proyecto en Python y Django
+para solucionar la problemática establecida.
+1.- En la Ciudad Parra’s existe la National League Footboll Parra (NFLP), esta liga esta solicitando a
+las casas desarrolladoras un proyecto a medida para registrar y controlar las estadisticas de la liga. La
+NFLP esta interesada en tener los siguientes Reportes:
+
+Lista General de Jugadores
+Lista Genereal de Equipos
+Lista General de Estadios
+Detalle de Jugadores
+Detalle de Estadios
+Detalle de Equipos
+Lista de Jugadores de un equipo proporciando por el usuario
+Lista de todos los jugadores de una posicion especificada por el usuario
+
+
+Importante: Realizar las Vistas, Modelos, Urls, Formas y demas cosas necesarias para cumplir con la
+necesidad de los reportes. Los reportes deben obtener su informacion mediante un queryset al modelo.
