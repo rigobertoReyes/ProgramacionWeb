@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}DetailTeam{% endblock %}
+
+{% block content %}
+<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active">
+    <div class="d-flex w-100 justify-content-between">
+      <h4 class="mb-1">Detail Player</h4>
+      <small>{{ object.name}}</small>
+    </div>
+     <p class="mb-1">Number: {{ object.number }}</p>
+     <p class="mb-1">Position: {{ object.position }}</p>
+     <p class="mb-1">Weight: {{ object.weight }}</p>
+     <p class="mb-1">Age: {{ object.age }}</p>
+  </a>
+</div>
+{% endblock %}

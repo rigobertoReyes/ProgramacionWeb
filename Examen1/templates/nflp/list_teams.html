@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% block title %}ListTeams{% endblock %}
 {% block content %}
 <table class="table .table-strip">
 		<thead>
@@ -10,7 +11,7 @@
 				<tr>
 					<td>{{ t.name }}</td>
 					<td>{{ t.location }}</td>
-					<td> <a href="#" class="btn btn-primary">Detail</a> </td>
+					<td> <a href="{% url 'Detail_Team_view' t.pk %}" class="btn btn-primary">Detail</a> </td>
 				</tr>
 			{% endfor %}
 			

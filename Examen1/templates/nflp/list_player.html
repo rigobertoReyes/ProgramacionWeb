@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% block title %}ListPlayer{% endblock %}
 {% block content %}
 <table class="table .table-strip">
 		<thead>
@@ -17,7 +18,7 @@
 					<td>{{ t.position }}</td>
 					<td>{{ t.weight }}</td>
 					<td>{{ t.age }}</td>
-					<td> <a href="#" class="btn btn-primary">Detail</a> </td>
+					<td> <a href="{% url 'Detail_Player_view' t.pk %}" class="btn btn-primary">Detail</a> </td>
 				</tr>
 			{% endfor %}
 			
